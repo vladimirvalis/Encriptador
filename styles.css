@@ -1,3 +1,11 @@
+main{
+    display: flex;
+}
+
 .inputTexto{
     text-align: center;
+}
+
+.mensaje{
+    background-image: url(./Imagenes/Muñeco.png);
 }

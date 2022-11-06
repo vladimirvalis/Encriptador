@@ -9,7 +9,7 @@
         <title>Encriptador</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
+
     </head>
 
     <body>
@@ -18,20 +18,23 @@
         </header>
 
         <main>
-            <form>
-                <label for="inputTexto"></label>
-                <textarea id="inputTexto" placeholder="Ingrese el texto aquí" cols="75" rows="30"></textarea>
-                <p>⚠ Solo letras minúsculas y sin acentos</p>
-            </form>
-            <input type="submit" value="Encriptar" class="encriptador">
-            <input type="submit" value="Desncriptar" class="desencriptador">
-            <div class="imagen">
-                <img src="Imagenes/Muñeco.png" alt="Ningún mensaje fue encontrado">
-                <p class="texto1">Ningún mensaje fue encontrado</p>
-                <p class="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-            <div class="textoTrabajado"></div>
+            <section>
+                    <textarea class="inputTexto" placeholder="Ingrese el texto aquí" cols="40" rows="6"></textarea>
+                    <p>⚠ Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button class="encriptar" onclick="botonEncriptador()">
+                    Encriptar
+                    </button>
+                    <button class="desencriptar" onclick="botonDesencriptador()">
+                    Desencriptar
+                    </button>
+                </div>
+            </section>
 
+            <section class="boxMensaje">
+                <textarea class="mensaje" cols="18" rows="8"></textarea>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </section>
         </main>
 
         <footer>
@@ -44,6 +47,7 @@
             </a>
         </footer>
 
+        <script src="script.js"></script>
     </body>
 
 </html>
