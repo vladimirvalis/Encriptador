@@ -1,11 +1,61 @@
+header{
+    width: 940px;
+    height: 50px;
+}
+
+header img{
+    width: 7%;
+    margin-top: 1%;
+}
+
+header h1{
+    display: inline;
+    vertical-align: super;
+    margin-left: -1%;
+}
+
 main{
     display: flex;
 }
 
 .inputTexto{
     text-align: center;
+    width: 310px;
+    height: 240px;
+    margin-left: 20px;
+}
+
+main p{
+    width: 336px;
+    height: 20px;
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .mensaje{
+    text-align: center;
+    width: 310px;
+    height: 240px;
+    margin-left: 20px;
     background-image: url(./Imagenes/Muñeco.png);
+}
+
+.copiar{
+    display: flex;
+
+}
+
+footer{
+    margin-top: 80%;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.links{
+    margin-top: 1%;
+    width: 5%;
+    height: 5%;
 }
